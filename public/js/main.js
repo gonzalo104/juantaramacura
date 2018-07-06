@@ -6,15 +6,20 @@
   ---------------------------- */
   $(window).on('load', function() {
     var pre_loader = $('#preloader');
-    pre_loader.fadeOut('slow', function() {
-      $(this).remove();
-    });
+
+    setTimeout(
+      function() 
+      {
+        pre_loader.fadeOut("slow", function() {
+          $(this).remove();
+        });
+      }, 1300);
   });
 
   /*---------------------
    TOP Menu Stick
   --------------------- */
-  var s = $("#sticker");
+  var s   = $("#sticker");
   var pos = s.position();
   $(window).on('scroll', function() {
     var windowpos = $(window).scrollTop() > 300;
@@ -47,17 +52,17 @@
   //Nivo slider
   //---------------------------------------------
   $('#ensign-nivoslider').nivoSlider({
-    effect: 'random',
-    slices: 15,
-    boxCols: 12,
-    boxRows: 8,
-    animSpeed: 500,
-    pauseTime: 5000,
-    startSlide: 0,
-    directionNav: true,
+    effect          : 'random',
+    slices          : 15,
+    boxCols         : 12,
+    boxRows         : 8,
+    animSpeed       : 500,
+    pauseTime       : 5000,
+    startSlide      : 0,
+    directionNav    : true,
     controlNavThumbs: false,
-    pauseOnHover: true,
-    manualAdvance: false,
+    pauseOnHover    : true,
+    manualAdvance   : false,
   });
 
   /*----------------------------
@@ -125,10 +130,10 @@
   ---------------------*/
   var test_carousel = $('.testimonial-carousel');
   test_carousel.owlCarousel({
-    loop: true,
-    nav: false,
-    dots: true,
-    autoplay: true,
+    loop      : true,
+    nav       : false,
+    dots      : true,
+    autoplay  : true,
     responsive: {
       0: {
         items: 1
@@ -148,11 +153,11 @@
   $(window).on("load", function() {
     var $container = $('.awesome-project-content');
     $container.isotope({
-      filter: '*',
+      filter          : '*',
       animationOptions: {
         duration: 750,
-        easing: 'linear',
-        queue: false
+        easing  : 'linear',
+        queue   : false
       }
     });
     var pro_menu = $('.project-menu li a');
@@ -162,11 +167,11 @@
       $(this).addClass('active');
       var selector = $(this).attr('data-filter');
       $container.isotope({
-        filter: selector,
+        filter          : selector,
         animationOptions: {
           duration: 750,
-          easing: 'linear',
-          queue: false
+          easing  : 'linear',
+          queue   : false
         }
       });
       return false;
@@ -181,8 +186,8 @@
   if (typeof($.fn.knob) != 'undefined') {
     var knob_tex = $('.knob');
     knob_tex.each(function() {
-      var $this = $(this),
-        knobVal = $this.attr('data-rel');
+      var $this   = $(this),
+          knobVal = $this.attr('data-rel');
 
       $this.knob({
         'draw': function() {
@@ -197,8 +202,8 @@
           value: knobVal
         }, {
           duration: 2000,
-          easing: 'swing',
-          step: function() {
+          easing  : 'swing',
+          step    : function() {
             $this.val(Math.ceil(this.value)).trigger('change');
           }
         });
@@ -212,20 +217,20 @@
   /*---------------------
      Google Maps
   --------------------- */
-  var get_latitude = $('#google-map').data('latitude');
+  var get_latitude  = $('#google-map').data('latitude');
   var get_longitude = $('#google-map').data('longitude');
 
   function initialize_google_map() {
-    var myLatlng = new google.maps.LatLng(get_latitude, get_longitude);
+    var myLatlng   = new google.maps.LatLng(get_latitude, get_longitude);
     var mapOptions = {
-      zoom: 14,
+      zoom       : 14,
       scrollwheel: false,
-      center: myLatlng
+      center     : myLatlng
     };
-    var map = new google.maps.Map(document.getElementById('google-map'), mapOptions);
+    var map    = new google.maps.Map(document.getElementById('google-map'), mapOptions);
     var marker = new google.maps.Marker({
       position: myLatlng,
-      map: map
+      map     : map
     });
   }
   google.maps.event.addDomListener(window, 'load', initialize_google_map);

@@ -36,6 +36,27 @@
 /*  1.  Theme default CSS
 /*----------------------------------------*/
 
+.cont-form{
+  color        : #ffffff!important;
+  border       : 2px solid #ffffff!important;
+  border-radius: 8px!important;
+}
+  
+.cont-form::placeholder{
+  color      : #fee15c;
+  font-weight: normal!important;
+  font-size  : 12px!important;
+}
+
+.sub-form{
+  color : #ffffff!important;
+  border: 2px solid #ffffff!important;
+  
+}
+.sub-form :hover{
+  color: #000!important;
+}
+
 html, body {
   height: 100%;
 }
@@ -554,6 +575,13 @@ div#preloader {
   background: rgba(248, 248, 248, 0.8) url("../img/amarres/background.png") no-repeat fixed center top / cover;
 }
 
+.our-skill-area.contactbg {
+  background: rgba(248, 248, 248, 0.8) url("../img/slider/img-slider1.jpg") no-repeat fixed center top / cover;
+}
+.our-skill-area.abaut-bg {
+  background: rgba(248, 248, 248, 0.8) url("../img/about/4.jpg") no-repeat fixed center top / cover;
+}
+
 .test-overly {
   background: rgba(0, 0, 0, 0.80);
   position  : absolute;
@@ -564,6 +592,7 @@ div#preloader {
 .progress-h4 {
   color      : #fff;
   font-weight: 500;
+  font-size  : 15px;
 }
 
 /*----------------------------------------
@@ -680,7 +709,7 @@ div#preloader {
   font-weight  : 500;
   margin-right : 5px;
   padding      : 10px 20px;
-  font-family: 'Lato', sans-serif;
+  font-family  : 'Lato', sans-serif;
   font-size    : 18px;
 }
 
@@ -793,7 +822,7 @@ div#preloader {
 }
 
 .suscribe-input button:hover {
-  background: #fff none repeat scroll 0 0;
+  background: #000 none repeat scroll 0 0;
   color     : #fee15c;
 }
 
@@ -881,7 +910,7 @@ div#preloader {
 .email-news .email_button>button:hover {
   background: #fee15c;
   border    : 1px solid #fff;
-  color     : #fff;
+  color     : #000;
 }
 
 .team-left-icon ul li {
@@ -1340,7 +1369,7 @@ div#preloader {
 .active>button:hover {
   background: #333 none repeat scroll 0 0;
   border    : 1px solid #333;
-  color     : #fff;
+  color     : #000;
   transition: 0.4s;
 }
 
@@ -1383,7 +1412,7 @@ div#preloader {
 }
 
 .quate:hover {
-  color: #fff;
+  color: #000;
 }
 
 .testi-img img {
@@ -1671,7 +1700,7 @@ div#preloader {
 }
 
 .contact-form button[type=submit]:hover {
-  color     : #fff;
+  color     : #000!important;
   border    : 1px solid #fee15c;
   background: #fee15c;
 }
@@ -1684,6 +1713,7 @@ div#preloader {
   padding      : 15px;
   font-weight  : 600;
   margin-bottom: 15px;
+
 }
 
 .contact-form #errormessage {
@@ -1712,7 +1742,7 @@ div#preloader {
   font-size    : 24px;
   width        : 50px;
   height       : 50px;
-  border       : 1px solid #444;
+  border       : 1px solid #fff;
   line-height  : 46px;
   border-radius: 50%;
   margin-bottom: 20px;
@@ -2017,7 +2047,7 @@ div#preloader {
 }
 
 .ready-btn:hover {
-  color          : #fff;
+  color          : #000;
   background     : #fee15c;
   border         : 1px solid #fee15c;
   text-decoration: none;
@@ -2336,7 +2366,7 @@ span.email-notes {
 
 .comment-respond input[type=submit]:hover {
   border    : 1px solid #fee15c;
-  color     : #fff;
+  color     : #000;
   background: #fee15c;
 }
 
@@ -2350,7 +2380,7 @@ span.email-notes {
  .End CSS
 ----------------------------------------*/
 .nivo-control .active{
-  color     : #fff;
+  color     : #000;
   background: #fee15c!important;
 }
 

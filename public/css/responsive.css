@@ -2,11 +2,20 @@
   .work-right-text {
     padding: 150px 150px;
   }
+ 
 }
 
 /* Normal desktop :992px. */
 
 @media (min-width: 992px) and (max-width: 1169px) {
+  .nivoSlider img {
+    position  : absolute;
+    top       : 0px;
+    left      : 0px;
+    max-width : none;
+    max-height: 640px!important;
+    display: none;
+  }
   .slider-content {
     padding: 146px 0;
   }
@@ -17,11 +26,15 @@
     font-size: 18px;
     line-height: 28px;
   }
+
 }
 
 /* Tablet desktop :768px. */
 
 @media (min-width: 768px) and (max-width: 991px) {
+  .nivoSlider img {
+    max-height: 640px;
+  }
   .main-menu ul.navbar-nav li {
     display: inline-block;
     padding: 0 8px;
@@ -119,6 +132,9 @@
 /* small mobile :320px. */
 
 @media (max-width: 767px) {
+  .nivoSlider img {
+    max-height: 640px;
+  }
 
   .header-area {
     height: 60px !important;
@@ -128,6 +144,7 @@
     display: inline-block;
     height: 60px  !important;
     padding: 9px 0;
+    
   }
   .navbar-default .navbar-toggle, .stick .navbar-default .navbar-toggle {
     padding: 15px 0;
@@ -269,6 +286,13 @@
   li.threaded-comments {
     margin-left: 0;
   }
+}
+@media (max-width: 320px) {
+  .navbar-brand h1{
+    word-wrap: break-word;
+    font-size: 30px;
+  }
+  
 }
 
 /* Large Mobile :480px. */

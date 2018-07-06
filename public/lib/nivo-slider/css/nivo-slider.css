@@ -23,8 +23,56 @@
 }
 .nivoSlider img {position:absolute;
     top : 0px;
-    left: 0px;
+	left: 0px;
 } */
+
+@media (min-width: 992px) and (max-width: 1169px) {
+	.nivoSlider {
+		position: relative;
+		width   : 100%;
+		height  : 500px!important;
+		overflow: hidden;
+	}
+	
+  
+  }
+  @media (min-width: 768px) and (max-width: 991px) {
+	.nivoSlider {
+		position: relative;
+		width   : 100%;
+		height  : 400px!important;
+		overflow: hidden;
+	}
+  }
+
+  @media (max-width: 767px) {
+	.nivoSlider {
+		position: relative;
+		width   : 100%;
+		height  : 300px!important;
+		overflow: hidden;
+	}
+  }
+  
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+	.nivoSlider {
+		position: relative;
+		width   : 100%;
+		height  : 300px!important;
+		overflow: hidden;
+	} 
+  }
+
+
+  @media (min-width: 320px) and (max-width: 425px){
+	.nivoSlider {
+		position: relative;
+		width   : 100%;
+		height  : 170px!important;
+		overflow: hidden;
+	} 
+  }
+
 .nivoSlider {
 	position: relative;
 	width   : 100%;
@@ -36,7 +84,7 @@
 	top       : 0px;
 	left      : 0px;
 	max-width : none;
-	max-height: 820px;
+	max-height: 640px;
 }
 .nivo-main-image {
 	display : block !important;
